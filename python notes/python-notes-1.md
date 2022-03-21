@@ -51,6 +51,13 @@ São dinamicamente traduzidas para comandos na máquina, sem passar pelo baixo n
   }
 ```
 
+### Interpolação no print
+
+```py
+a = 2
+print(f'O valor de é {a}')
+```
+
 ## 2. Variáveis
 
 Tipos mais usuais de variáveis: 
@@ -59,7 +66,6 @@ Tipos mais usuais de variáveis:
 |:---:|:---:|:---:|
 |Inteiro|`int`| Números inteiros |
 |Real|`float`|Número com *ponto flutuante*|
-|Real|`double`| `float` com o dobro de precisão |
 |Caracter|`char`| Um caracter |
 |String|`str`| É um conjunto de caracteres (*vetor*)|
 
@@ -68,4 +74,34 @@ Tipos mais usuais de variáveis:
 ```py
 frase = input()
 print(frase)
+```
+
+### fazendo uma entrada melhor:
+```py
+frase = input('Digite uma frase: ')
+print(frase)
+```
+
+### casting de entrada
+Aviso de tipo a ser recebido ou lido:
+
+> Se o o `input()`  do `a` for `2` pelo terminal, ele será da classe das strings(`str`)
+
+> Se fizermos `int(input())` do `a` for `2` pelo terminal, ele será da classe inteiro(`int`)
+
+```py
+a = input('digite o valor da variável a: ')
+b = int(input('digite o valor da variável b: '))
+
+print(int(a)+b)
+```
+
+### Keyword `type()`
+
+Retorna o tipo(classe) a qual essa variável pertence.
+
+código:
+```py
+  a = input();
+  print( type(a) )
 ```

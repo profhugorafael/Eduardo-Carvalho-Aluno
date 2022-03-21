@@ -1,8 +1,4 @@
-a = input()
-b = int(input())
+a = input('digite o valor da variável a: ')
+b = int(input('digite o valor da variável b: '))
 
-print(int(a)+b)
-print( type(a) )
-
-print( type( str(b) ) )
-print(3+2)
+print(( int(a)+b ))
