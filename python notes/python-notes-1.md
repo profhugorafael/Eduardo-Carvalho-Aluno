@@ -68,6 +68,7 @@ Tipos mais usuais de variáveis:
 |Real|`float`|Número com *ponto flutuante*|
 |Caracter|`char`| Um caracter |
 |String|`str`| É um conjunto de caracteres (*vetor*)|
+|Boolean|`bool`|Guarda `True` ou `False`|
 
 ## 3. Entrada e Saída de dados
 
