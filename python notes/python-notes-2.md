@@ -115,3 +115,13 @@ result = `A || B`
 |False|True| True |
 |True|False| True|
 |False|False| False |
+
+
+## Operador mod - `%`
+
+Basicamente `a%b` retorna o resto de a dividido por b.
+
+## Operador potências - `**`
+
+`a**b` indica a elevado a b.
+
