@@ -102,6 +102,8 @@ Desta forma, indicamos através da expressão regular `.3f` que queremos 3 casas
 
 Nem sempre os problemas estarão da melhor maneira para serem lidos em python, já que o python faz a **inferência de tipo** como *string*(`str`). Por isso teremos dificuldade de ler entradas do tipo:
 
+### 1. Situação problema
+
 Problema: Mostre a soma de dois números.
 
 Caso de entrada:
@@ -121,6 +123,48 @@ Este código não é capaz de interpretar um código que entra em apenas uma lin
 '2 3' --------> ['2' , '3']
 ```
 
-Dessa forma com os elementos separados conseguimos acessá-los individualmente na forma de um vetor(*array*).
+### 2. Sintaxe básica da `.split()`
+
+A sintaxe do `split` vazio como apresentei é mais simples, porém ele tem parâmetros opcionais que aprenderemos futuramente ao estudarmos as `strings` mais a fundo.
+
+```py
+# leio as variáveis em uma linha
+linha = input()
+
+# Sequencia recebe os elementos separados
+sequencia = linha.split()
+
+# Mostro o conteúdo da sequencia
+print(sequencia)
+```
+
+input:
+```
+10 5 8 15
+```
+
+output:
+```
+['10', '5', '8', '15]
+```
+
+### 3. Acessando elementos do `.split()`
+
+Para acessarmos o elemento em uma determinada posição, basta indicar a posição entre conchetes, mas sempre lembrando que **as posições começam a partir do zero.**
+
+Acessando o 2º elemento do código exemplo acima:
+```py
+print(sequencia[1])
+```
+
+output:
+```
+5
+```
+
+De modo geral, `nome_da_sequencia[posição]` é como podemos acessar tanto para mudar, quanto para consultar e usar o valor de um determinado valor obtido.
+
+Sempre lembrando que estes valores são lidos em um modelo de `strings`, caso queira usá-los de outra forma, ainda é preciso fazer a conversão.
+
 
 <!-- # `if` with resources -->
