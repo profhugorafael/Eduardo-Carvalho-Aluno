@@ -12,6 +12,7 @@ while condição  :
 O while executa enquanto a condição for verdadeira, logo é preciso também inserir alguma atualização ou condição de parada.
 
 Exemplo: Loja que enquanto sem estoque compra até zerar e enquanto com estoque vende até zerar.
+
 ```py
 estoque = 10
 
